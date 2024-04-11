@@ -1,10 +1,10 @@
 import { View, Text } from 'react-native';
 import React from 'react';
 
-const App = () => {
+const list = () => {
     return (
         <View>
-            <Text>dwadwa</Text>
+            <Text></Text>
         </View>
     );
 };

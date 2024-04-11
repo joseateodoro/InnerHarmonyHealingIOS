@@ -9,7 +9,7 @@ import { StyleSheet, Text, View, Pressable, TouchableOpacity } from 'react-nativ
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app! Inner Harmony Healing IOS</Text>
+      <Text>Open up App.js to start working on your app! </Text>
       <StatusBar style="auto" />
     </View>
   );
