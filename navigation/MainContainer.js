@@ -32,7 +32,7 @@ export default function MainContainer() {
                         } else if (rn === notifName) {
                             iconName = focused ? 'list' : 'list-outline'
                         } else if (rn === settingsName) {
-                            iconNmae = focused ? 'settings' : 'settings-outline'
+                            iconName = focused ? 'settings' : 'settings-outline'
                         }
 
                         return <Ionicons name={iconName} size={size} color={color} />
