@@ -13,7 +13,7 @@ import SettingsScreen from './screens/SettingsScreen'
 //Screen Names
 const homeName = 'Home';
 const notifName = 'Notification';
-const settings = 'Settings';
+const settingsName = 'Settings';
 
 const Tab = createBottomTabNavigator();
 
@@ -42,6 +42,8 @@ export default function MainContainer() {
                 })}>
 
                 <Tab.Screen name={homeName} component={HomeScreen}/>
+                <Tab.Screen name={notifName} component={NotificationScreen}/>
+                <Tab.Screen name={settingsName} component={SettingsScreen}/>
 
             </Tab.Navigator>
         </NavigationContainer>
