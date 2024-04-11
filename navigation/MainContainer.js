@@ -20,12 +20,13 @@ const Tab = createBottomTabNavigator();
 export default function MainContainer() {
     return (
         <NavigationContainer>
-            <Tab.Navigator>
-                initialRouteName={homeName}
-                screenOptions={({root}) => ({
+            <Tab.Navigator 
+            
+            initialRouteName={homeName}
+                screenOptions={({route}) => ({
                     tabBarIcon: ({focused, color, size}) => {
                         let iconName;
-                        let rn = root.name;
+                        let rn = route.name;
 
                         if (rn === homeName) {
                             iconName = focused ? 'home' : 'home-outline'
@@ -37,7 +38,8 @@ export default function MainContainer() {
 
                         return <Ionicons name={iconName} size={size} color={color} />
                     },
-                })}
+               
+                })}>
 
                 <Tab.Screen name={homeName} component={HomeScreen}/>
 
