@@ -8,12 +8,14 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 //Screens
 import HomeScreen from './screens/HomeScreen'
 import NotificationScreen from './screens/NotificationScreen'
-import SettingsScreen from './screens/SettingsScreen'
+import ProfileScreen from './screens/ProfileScreen'
+import DesignScreen from './screens/DesignScreen';
 
 //Screen Names
 const homeName = 'Home';
 const notifName = 'Notification';
-const settingsName = 'Settings';
+const profileName = 'Profile';
+// const designName = 'Design'
 
 const Tab = createBottomTabNavigator();
 
@@ -31,10 +33,13 @@ export default function MainContainer() {
                         if (rn === homeName) {
                             iconName = focused ? 'home' : 'home-outline'
                         } else if (rn === notifName) {
-                            iconName = focused ? 'list' : 'list-outline'
-                        } else if (rn === settingsName) {
-                            iconName = focused ? 'settings' : 'settings-outline'
-                        }
+                            iconName = focused ? 'notifications' : 'notifications-outline'
+                        } else if (rn === profileName) {
+                            iconName = focused ? 'person' : 'person-outline'
+                        } 
+                        // else if (rn === designName) {
+                        //     iconName = focused ? 'accessibility' : 'accessibility-outline'
+                        // }
 
                         return <Ionicons name={iconName} size={size} color={color} />
                     },
@@ -43,7 +48,8 @@ export default function MainContainer() {
 
                 <Tab.Screen name={homeName} component={HomeScreen}/>
                 <Tab.Screen name={notifName} component={NotificationScreen}/>
-                <Tab.Screen name={settingsName} component={SettingsScreen}/>
+                <Tab.Screen name={profileName} component={ProfileScreen}/>
+                {/* <Tab.Screen name={designName} component={DesignScreen}/> */}
 
             </Tab.Navigator>
         </NavigationContainer>
