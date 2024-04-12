@@ -18,7 +18,8 @@ export const FontFamily = {
     colorBeige: "F8F5DD",
     colorGainsboro: "E0DFDA",
     colorMediumpurple: "#b388eb",
-    colorPalegoldenrod: "cef8b1"
+    colorPalegoldenrod: "cef8b1",
+    colorCornflowerblue: "#8093F1"
   };
   /* border radiuses */
   export const Border = {

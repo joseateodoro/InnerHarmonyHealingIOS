@@ -1,7 +1,9 @@
 import * as React from "react";
 import { Image } from "expo-image";
 import { StyleSheet, Text, View } from "react-native";
-import { Color, FontFamily, FontSize } from "../GlobalStyles";
+import { Color, FontFamily, FontSize } from "../globals";
+
+//UPDATE POSITIONING & COLOR ISSUE
 
 const ACCOUNT = () => {
   return (

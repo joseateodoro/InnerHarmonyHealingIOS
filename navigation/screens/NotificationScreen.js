@@ -1,17 +1,12 @@
 import * as React from "react";
 import { StyleSheet, View, Text } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
 import { Color, Border, FontSize, FontFamily } from "../globals";
 
-// UPDATE POSITIONING 2024-04-11
+//UPDATE POSITIONING & PLAYFAIR ISSUE
 
-export default function NotificationScreen({navigation}) {
+const NOTIFICATION1 = () => {
   return (
-    <LinearGradient
-      style={styles.notification}
-      locations={[0, 0.79, 1]}
-      colors={["#e5e7f0", "#9ba9f1", "#8093f1"]}
-    >
+    <View style={styles.notification}>
       <View style={[styles.mydesignTxtbox, styles.mydesignLayout1]}>
         <View style={[styles.mydesignTxtboxChild, styles.mydesignLayout]} />
         <View style={[styles.mydesignTxtboxChild, styles.mydesignLayout]} />
@@ -73,7 +68,7 @@ export default function NotificationScreen({navigation}) {
         </Text>
       </View>
       <Text style={styles.notifications}>Notifications</Text>
-    </LinearGradient>
+    </View>
   );
 };
 
@@ -179,10 +174,12 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   notification: {
+    backgroundColor: "#8093f1",
     flex: 1,
     width: "100%",
     height: 800,
     overflow: "hidden",
-    backgroundColor: "transparent",
   },
 });
+
+export default NOTIFICATION1;
