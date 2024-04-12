@@ -3,6 +3,8 @@ import { StyleSheet, View, Text } from "react-native";
 import { Image } from "expo-image";
 import { Color, Border, FontSize, FontFamily } from "../globals";
 
+
+
 const HOME = () => {
   return (
     <View style={styles.home}>
@@ -10,12 +12,12 @@ const HOME = () => {
       <Image
         style={[styles.icons8Comment1001, styles.icons8Layout1]}
         contentFit="cover"
-        source={require("../assets/icons8comment100-1.png")}
+        source={require("../../assets/Vectors/icons8-comment-100.png")}
       />
       <Image
         style={[styles.icons8Heart241, styles.icons8Layout1]}
         contentFit="cover"
-        source={require("../assets/icons8heart24-1.png")}
+        source={require("../../assets/Vectors/icons8-heart-material-outlined (1)/icons8-heart-24.png")}
       />
       <View style={[styles.homeItem, styles.homeChildShadowBox]} />
       <View style={[styles.homeInner, styles.homeInnerShadowBox]} />
@@ -29,7 +31,7 @@ const HOME = () => {
         <Image
           style={[styles.icons8MaleUser964, styles.groupChildPosition]}
           contentFit="cover"
-          source={require("../assets/icons8maleuser96-4.png")}
+          source={require("../../assets/Vectors/icons8-male-user-96.png")}
         />
         <Text style={[styles.meganharmony, styles.meganharmonyTypo]}>
           meganharmony
@@ -59,12 +61,12 @@ const HOME = () => {
         <Image
           style={[styles.groupChild, styles.groupChildLayout]}
           contentFit="cover"
-          source={require("../assets/ellipse-2.png")}
+          source={require("../../assets/Vectors/home-user-Ellipse.png")}
         />
         <Image
           style={styles.icons8MaleUser963}
           contentFit="cover"
-          source={require("../assets/icons8maleuser96-3.png")}
+          source={require("../../assets/Vectors/icons8-male-user-96.png")}
         />
       </View>
       <Text style={[styles.goodMorningJohn, styles.changeTypo]}>
@@ -73,22 +75,22 @@ const HOME = () => {
       <Image
         style={[styles.icons8Play301, styles.icons8Layout]}
         contentFit="cover"
-        source={require("../assets/icons8play30-1.png")}
+        source={require("../../assets/Vectors/icons8-play-30.png")}
       />
       <Image
         style={styles.lineIcon}
         contentFit="cover"
-        source={require("../assets/line-6.png")}
+        source={require("../../assets/Vectors/home-play-line.png")}
       />
       <Image
         style={[styles.icons8Dots301, styles.icons8Layout]}
         contentFit="cover"
-        source={require("../assets/icons8dots30-1.png")}
+        source={require("../../assets/Vectors/icons8-dots-ios-17-glyph/icons8-dots-30.png")}
       />
       <Image
         style={[styles.icons8Bookmark241, styles.icons8Layout1]}
         contentFit="cover"
-        source={require("../assets/icons8bookmark24-1.png")}
+        source={require("../../assets/Vectors/icons8-bookmark-24.png")}
       />
     </View>
   );

@@ -3,6 +3,8 @@ import { StyleSheet, View, Text } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { Color, Border, FontSize, FontFamily } from "../globals";
 
+// UPDATE POSITIONING 2024-04-11
+
 export default function NotificationScreen({navigation}) {
   return (
     <LinearGradient
