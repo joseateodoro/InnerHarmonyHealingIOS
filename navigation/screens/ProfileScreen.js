@@ -9,14 +9,14 @@ const ACCOUNT = () => {
       <Image
         style={styles.icons8MaleUser962}
         contentFit="cover"
-        source={require("../assets/icons8maleuser96-2.png")}
+        source={require("../../assets/Vectors/icons8-male-user-96.png")}
       />
       <Text style={styles.johnJones}>John Jones</Text>
       <Text style={styles.johnjonesuser}>@johnjonesuser</Text>
       <Image
         style={[styles.icons8Arrow902, styles.icons8Layout]}
         contentFit="cover"
-        source={require("../assets/icons8arrow90-2.png")}
+        source={require("../../assets/Vectors/icons8-arrow-90.png")}
       />
       <View style={[styles.accountInfo, styles.accountLayout]}>
         <View style={[styles.accountInfoChild, styles.timeOfBirthPosition]} />
@@ -48,7 +48,7 @@ const ACCOUNT = () => {
         <Image
           style={[styles.icons8Settings3842, styles.icons8Layout]}
           contentFit="cover"
-          source={require("../assets/icons8settings384-2.png")}
+          source={require("../../assets/Vectors/icons8-settings-384.png")}
         />
       </View>
     </View>
