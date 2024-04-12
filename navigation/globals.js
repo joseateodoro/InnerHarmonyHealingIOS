@@ -15,5 +15,6 @@ export const FontFamily = {
   /* border radiuses */
   export const Border = {
     br_sm: 14,
+    br_base: 16
   };
   
