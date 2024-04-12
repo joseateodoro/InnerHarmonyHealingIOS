@@ -15,6 +15,8 @@ export const FontFamily = {
   /* Colors */
   export const Color = {
     colorBlack: "#000",
+    colorBeige: "F8F5DD",
+    colorGainsboro: "E0DFDA",
     colorMediumpurple: "#b388eb",
     colorPalegoldenrod: "cef8b1"
   };

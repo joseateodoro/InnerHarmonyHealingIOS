@@ -3,7 +3,7 @@ import { StyleSheet, View, Text } from "react-native";
 import { Image } from "expo-image";
 import { Color, Border, FontSize, FontFamily } from "../globals";
 
-
+// UPDATE POSITION, CARD COLOR, BOX SIZE/SHADOWING, AND PLAYFAIR TEXT 2024:04-12
 
 const HOME = () => {
   return (
