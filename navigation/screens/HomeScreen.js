@@ -87,6 +87,7 @@ const HOME = () => {
         contentFit="cover"
         source={require("../../assets/Vectors/icons8-dots-ios-17-glyph/icons8-dots-30.png")}
       />
+  
       <Image
         style={[styles.icons8Bookmark241, styles.icons8Layout1]}
         contentFit="cover"
@@ -94,23 +95,24 @@ const HOME = () => {
       />
     </View>
   );
+
 };
 
 const styles = StyleSheet.create({
   homeChildShadowBox: {
-    height: 147,
-    width: 337,
+    height: 187,
+    width: 390,
     shadowOpacity: 1,
-    elevation: 4,
+    elevation: 8,
     shadowRadius: 4,
     shadowOffset: {
       width: 0,
-      height: 4,
+      height: 500,
     },
     shadowColor: "rgba(0, 0, 0, 0.25)",
     backgroundColor: Color.colorPalegoldenrod,
     borderRadius: Border.br_base,
-    left: 12,
+    left: 10,
     position: "absolute",
   },
   icons8Layout1: {
@@ -146,8 +148,8 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   groupChildPosition: {
-    left: 0,
-    top: 0,
+    left: 7,
+    top: 16,
   },
   meganharmonyTypo: {
     fontFamily: FontFamily.interMedium,
@@ -173,13 +175,13 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   homeChild: {
-    top: 237,
+    top: 240,
   },
   icons8Comment1001: {
-    left: 63,
+    left: 70,
   },
   icons8Heart241: {
-    left: 34,
+    left: 40,
   },
   homeItem: {
     top: 399,
@@ -191,11 +193,11 @@ const styles = StyleSheet.create({
     left: 188,
   },
   latinWords: {
-    top: 13,
+    top: 27,
     fontStyle: "italic",
     fontWeight: "300",
     fontFamily: FontFamily.interLight,
-    left: 32,
+    left: 43,
     textAlign: "left",
     color: Color.colorBlack,
   },
@@ -205,10 +207,10 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   meganharmony: {
-    top: 0,
+    top: 15,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
-    left: 32,
+    left: 35,
   },
   meganharmonyProfile: {
     top: 250,
@@ -216,11 +218,11 @@ const styles = StyleSheet.create({
     width: 107,
   },
   homeChild1: {
-    top: 75,
+    top: 50,
   },
   replaceSomethingWith: {
-    top: 123,
-    left: 84,
+    top: 120,
+    left: 105,
     width: 218,
     fontFamily: FontFamily.interRegular,
   },
@@ -232,33 +234,33 @@ const styles = StyleSheet.create({
     fontFamily: FontFamily.interRegular,
   },
   anteDiluvianFromContainer: {
-    top: 288,
-    left: 67,
+    top: 303,
+    left: 80,
     width: 253,
     height: 48,
   },
   change: {
     top: 94,
-    left: 148,
+    left: 175,
     fontSize: 15,
   },
   yourTipOf: {
-    top: 82,
-    left: 36,
+    top: 75,
+    left: 40,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.playfairDisplayRegular,
   },
   innerharmonyhealing: {
-    top: 200,
-    left: 212,
+    top: 195,
+    left: 260,
   },
   groupChild: {
-    left: 0,
-    top: 0,
+    left: 40,
+    top: -10,
   },
   icons8MaleUser963: {
-    top: 3,
-    left: 3,
+    top: -8,
+    left: 43,
     width: 65,
     height: 65,
     position: "absolute",
@@ -268,29 +270,29 @@ const styles = StyleSheet.create({
     top: 40,
   },
   goodMorningJohn: {
-    left: 43,
+    left: 60,
     fontSize: 20,
-    top: 40,
+    top: 30,
   },
   icons8Play301: {
-    top: 195,
+    top: 193,
     width: 12,
-    left: 36,
+    left: 45,
   },
   lineIcon: {
-    top: 202,
-    left: 56,
-    width: 121,
-    height: 1,
+    top: 200,
+    left: 66,
+    width: 140,
+    height: 2,
     position: "absolute",
   },
   icons8Dots301: {
-    top: 249,
-    left: 316,
+    top: 270,
+    left: 355,
     width: 15,
   },
   icons8Bookmark241: {
-    left: 314,
+    left: 355,
   },
   home: {
     backgroundColor: "#8093f1",
