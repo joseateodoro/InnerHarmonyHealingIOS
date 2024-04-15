@@ -11,7 +11,7 @@
 - Google Firebase Database 
 
 ### Software: Android App (InnerHarmonyHealing) 
-&emsp;&emsp;Purpose: For changing which layout is displayed on the mirror, and setting the voice commands.
+&emsp;&emsp;Purpose: To enlighten and change prospective for users.
 </br></br>
 
 #### Login Page
