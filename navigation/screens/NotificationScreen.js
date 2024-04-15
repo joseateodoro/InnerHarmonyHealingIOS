@@ -2,8 +2,6 @@ import * as React from "react";
 import { StyleSheet, View, Text } from "react-native";
 import { Color, Border, FontSize, FontFamily } from "../globals";
 
-//UPDATE POSITIONING & PLAYFAIR ISSUE
-
 const NOTIFICATION1 = () => {
   return (
     <View style={styles.notification}>
@@ -82,6 +80,7 @@ const styles = StyleSheet.create({
     backgroundColor: Color.colorMediumpurple,
     borderRadius: Border.br_sm,
     top: 0,
+    left: 20,
     height: 75,
     width: 280,
     position: "absolute",
@@ -91,6 +90,7 @@ const styles = StyleSheet.create({
     width: 238,
     fontSize: FontSize.size_5xs,
     top: 38,
+    left: 50,
     textAlign: "left",
     color: Color.colorBlack,
     fontFamily: FontFamily.playfairDisplayRegular,
@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
   yourTypo: {
     fontSize: FontSize.size_xs,
     top: 9,
+    left: 40,
     textAlign: "left",
     color: Color.colorBlack,
     fontFamily: FontFamily.playfairDisplayRegular,
@@ -166,7 +167,7 @@ const styles = StyleSheet.create({
   },
   notifications: {
     top: 54,
-    left: 94,
+    left: 115,
     fontSize: 30,
     textAlign: "left",
     color: Color.colorBlack,
