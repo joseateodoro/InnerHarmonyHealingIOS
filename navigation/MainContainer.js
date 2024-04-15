@@ -22,13 +22,13 @@ const Tab = createBottomTabNavigator();
 export default function MainContainer() {
     return (
         <NavigationContainer>
-            <StackActions.Navigator>
+            {/* <StackActions.Navigator>
                 screenOptions= {{
                     headerStyle: {
                         backgroundColor: "#8093F1",
                     },
                 }}
-            </StackActions.Navigator>
+            </StackActions.Navigator> */}
             <Tab.Navigator 
             initialRouteName={homeName}
                 screenOptions={({route}) => ({

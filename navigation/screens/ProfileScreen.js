@@ -3,8 +3,6 @@ import { Image } from "expo-image";
 import { StyleSheet, Text, View } from "react-native";
 import { Color, FontFamily, FontSize } from "../globals";
 
-//UPDATE POSITIONING & COLOR ISSUE
-
 const ACCOUNT = () => {
   return (
     <View style={styles.account}>
@@ -92,8 +90,8 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   johnJones: {
-    top: 181,
-    left: 112,
+    top: 120,
+    left: 135,
     fontSize: 25,
     fontWeight: "700",
     fontFamily: FontFamily.interBold,
@@ -108,8 +106,8 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   johnjonesuser: {
-    top: 211,
-    left: 124,
+    top: 160,
+    left: 145,
     fontSize: 15,
     fontFamily: FontFamily.interRegular,
     textShadowRadius: 4,
@@ -136,39 +134,39 @@ const styles = StyleSheet.create({
   pm: {
     top: 21,
     fontSize: FontSize.size_3xs,
-    left: 0,
+    left: 2,
   },
   timeOfBirth: {
     fontSize: FontSize.size_xs,
     top: 0,
-    left: 0,
+    left: 2,
   },
   emailInfoChild: {
     top: 43,
     borderStyle: "solid",
     borderColor: Color.colorGainsboro,
-    borderTopWidth: 1,
-    width: 309,
+    borderTopWidth: .5,
+    width: 350,
     height: 1,
     left: 0,
     position: "absolute",
   },
   emailInfo: {
-    top: 228,
+    top: 210,
   },
   birthdateInfo: {
-    top: 124,
+    top: 90,
   },
   birthplaceInfo: {
-    top: 176,
+    top: 150,
   },
   accountInformation: {
-    top: 22,
-    left: 26,
+    top: -20,
+    left: 30,
     fontSize: 18,
   },
   emailInfo1: {
-    top: 72,
+    top: 30,
   },
   icons8Settings3842: {
     top: 20,
