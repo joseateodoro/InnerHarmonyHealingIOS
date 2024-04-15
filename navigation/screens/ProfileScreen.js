@@ -3,6 +3,8 @@ import { Image } from "expo-image";
 import { StyleSheet, Text, View } from "react-native";
 import { Color, FontFamily, FontSize } from "../globals";
 
+// color, font, image issues
+
 const ACCOUNT = () => {
   return (
     <View style={styles.account}>
@@ -83,8 +85,8 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   icons8MaleUser962: {
-    top: 85,
-    left: 132,
+    top: 30,
+    left: 153,
     width: 96,
     height: 96,
     position: "absolute",
@@ -169,11 +171,11 @@ const styles = StyleSheet.create({
     top: 30,
   },
   icons8Settings3842: {
-    top: 20,
-    left: 317,
+    top: -15,
+    left: 350,
   },
   accountInfo: {
-    top: 259,
+    top: 230,
     left: 0,
   },
   account: {
