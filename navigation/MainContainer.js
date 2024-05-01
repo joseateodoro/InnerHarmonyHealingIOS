@@ -24,7 +24,7 @@ const profileName = 'Profile';
 
 const Tab = createBottomTabNavigator();
 
-function bottomTabNavigation() {
+function BottomTabNavigation() {
     return (
         <Tab.Navigator 
         initialRouteName={homeName}
@@ -62,7 +62,7 @@ export default function MainContainer() {
         <NavigationContainer>
             <Stack.Navigator initialRouteName='Login'>
                 <Stack.Screen name='Login' component={Login} options={{ headerShown: false }} />
-                <Stack.Screen name="bottomtabNavigation" component={bottomTabNavigation}/>
+                <Stack.Screen name="Navigation" component={BottomTabNavigation}/>
             </Stack.Navigator>
         </NavigationContainer>
     );
