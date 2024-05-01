@@ -24,41 +24,46 @@ const profileName = 'Profile';
 
 const Tab = createBottomTabNavigator();
 
+function bottomTabNavigation() {
+    return (
+        <Tab.Navigator 
+        initialRouteName={homeName}
+            screenOptions={({route}) => ({
+                tabBarIcon: ({focused, color, size}) => {
+                    let iconName;
+                    let rn = route.name;
+
+                    if (rn === homeName) {
+                        iconName = focused ? 'home' : 'home-outline'
+                    } else if (rn === notifName) {
+                        iconName = focused ? 'notifications' : 'notifications-outline'
+                    } else if (rn === profileName) {
+                        iconName = focused ? 'person' : 'person-outline'
+                    } 
+                    // else if (rn === designName) {
+                    //     iconName = focused ? 'accessibility' : 'accessibility-outline'
+                    // }
+
+                    return <Ionicons name={iconName} size={size} color={color} />
+                },
+           
+            })}>
+            <Tab.Screen name={homeName} component={HomeScreen}/>
+            <Tab.Screen name={notifName} component={NotificationScreen}/>
+            <Tab.Screen name={profileName} component={ProfileScreen}/>
+            {/* <Tab.Screen name={designName} component={DesignScreen}/> */}
+
+        </Tab.Navigator>
+    )
+}
+
 export default function MainContainer() {
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName='Login'>
                 <Stack.Screen name='Login' component={Login} options={{ headerShown: false }} />
+                <Stack.Screen name="bottomtabNavigation" component={bottomTabNavigation}/>
             </Stack.Navigator>
-
-            <Tab.Navigator 
-            initialRouteName={homeName}
-                screenOptions={({route}) => ({
-                    tabBarIcon: ({focused, color, size}) => {
-                        let iconName;
-                        let rn = route.name;
-
-                        if (rn === homeName) {
-                            iconName = focused ? 'home' : 'home-outline'
-                        } else if (rn === notifName) {
-                            iconName = focused ? 'notifications' : 'notifications-outline'
-                        } else if (rn === profileName) {
-                            iconName = focused ? 'person' : 'person-outline'
-                        } 
-                        // else if (rn === designName) {
-                        //     iconName = focused ? 'accessibility' : 'accessibility-outline'
-                        // }
-
-                        return <Ionicons name={iconName} size={size} color={color} />
-                    },
-               
-                })}>
-                <Tab.Screen name={homeName} component={HomeScreen}/>
-                <Tab.Screen name={notifName} component={NotificationScreen}/>
-                <Tab.Screen name={profileName} component={ProfileScreen}/>
-                {/* <Tab.Screen name={designName} component={DesignScreen}/> */}
-
-            </Tab.Navigator>
         </NavigationContainer>
     );
 }
