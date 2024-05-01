@@ -24,9 +24,21 @@ const profileName = 'Profile';
 
 const Tab = createBottomTabNavigator();
 
-function BottomTabNavigation() {
+
+
+function LoginNavigation() {
     return (
-        <Tab.Navigator 
+        //not implemented
+        <Stack.Navigator initialRouteName='Login'>
+                <Stack.Screen name='Login' component={Login} options={{ headerShown: false }} />
+        </Stack.Navigator>
+    )
+}
+
+export default function MainContainer() {
+    return (
+        <NavigationContainer>
+            <Tab.Navigator 
         initialRouteName={homeName}
             screenOptions={({route}) => ({
                 tabBarIcon: ({focused, color, size}) => {
@@ -52,18 +64,7 @@ function BottomTabNavigation() {
             <Tab.Screen name={notifName} component={NotificationScreen}/>
             <Tab.Screen name={profileName} component={ProfileScreen}/>
             {/* <Tab.Screen name={designName} component={DesignScreen}/> */}
-
         </Tab.Navigator>
-    )
-}
-
-export default function MainContainer() {
-    return (
-        <NavigationContainer>
-            <Stack.Navigator initialRouteName='Login'>
-                <Stack.Screen name='Login' component={Login} options={{ headerShown: false }} />
-                <Stack.Screen name="Navigation" component={BottomTabNavigation}/>
-            </Stack.Navigator>
         </NavigationContainer>
     );
 }
