@@ -3,13 +3,18 @@ import { View, Text } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Ionicons from 'react-native-vector-icons/Ionicons'
+
+//Stacks
+const Stack = createNativeStackNavigator();
 
 //Screens
 import HomeScreen from './screens/HomeScreen'
 import NotificationScreen from './screens/NotificationScreen'
 import ProfileScreen from './screens/ProfileScreen'
 import DesignScreen from './screens/DesignScreen';
+import Login from './screens/Login'
 
 //Screen Names
 const homeName = 'Home';
@@ -22,6 +27,10 @@ const Tab = createBottomTabNavigator();
 export default function MainContainer() {
     return (
         <NavigationContainer>
+            <Stack.Navigator initialRouteName='Login'>
+                <Stack.Screen name='Login' component={Login} options={{ headerShown: false }} />
+            </Stack.Navigator>
+
             <Tab.Navigator 
             initialRouteName={homeName}
                 screenOptions={({route}) => ({
