@@ -23,7 +23,7 @@
 </br></br>
 
 #### Home Page
-&emsp;&emsp;On first launch, it shows the default layouts that the user can choose to change the mirror display to. These default layouts cannot be edited. After first launch, it shows the default and user created layouts (if any). These layouts are retrieved dynamically from the database when the page loads. Tapping on these layouts will set the mirror display to that layout. There is an _Add Layout_ button that will send the user to the _**Create/Edit Layouts Page**_
+&emsp;&emsp;•	Showcases the message of the admin posting the message of the day with profile, date, Like, and comment functions.
 </br></br>
 
 #### Notifications Page
