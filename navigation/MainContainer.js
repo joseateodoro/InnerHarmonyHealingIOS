@@ -6,8 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
-//Stacks
-const Stack = createNativeStackNavigator();
+
 
 //Screens
 import HomeScreen from './screens/HomeScreen'
@@ -22,9 +21,9 @@ const notifName = 'Notification';
 const profileName = 'Profile';
 // const designName = 'Design'
 
+//Stacks
+const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
-
-
 
 function LoginNavigation() {
     return (
